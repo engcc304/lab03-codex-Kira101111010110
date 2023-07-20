@@ -26,10 +26,10 @@ int main() {
         for( int i = 0 ; i < NumberOfItems ; i++ ) {
             TotalPrice[i] = Quantity[i] * UnitPrice[i] ;
             TotalAmount += TotalPrice[i] ;
-        } //end for
             printf( "--------------------------------------------------------------\n" ) ;
             printf( "%-20s %11s %13s %17s\n" ,  "Name" , "Quantity" , "Unit Price" , "Total Price" ) ;
             printf( "--------------------------------------------------------------\n" ) ;
+        } //end for
         for( i= 0 ; i < NumberOfItems ; i++ ) {
             printf( "%-20s %11d %13.2f %17.2f\n" , Name[i] , Quantity[i] , UnitPrice[i] , TotalPrice[i] ) ;
             printf( "--------------------------------------------------------------\n" )  ;
