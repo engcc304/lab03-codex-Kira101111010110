@@ -9,7 +9,9 @@ int main() {
           printf( "Here " ) ;
           if( i == 8 ) {
             printf( "This is 8. " ) ; 
-          }
-        } printf( "ok" ) ;
-    } return 0 ; 
-}
+          } // End if
+        } // End if
+        printf( "ok" ) ;
+    } // End for
+    return 0 ; 
+} // End main function
