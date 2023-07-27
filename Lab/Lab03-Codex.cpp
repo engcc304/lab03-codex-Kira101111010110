@@ -1,4 +1,7 @@
 #include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <time.h>
 
 int main(void) {
     char CustomerName[15], Name[10][15] ;
@@ -7,13 +10,13 @@ int main(void) {
     printf( "Enter customer name [QUIT to stop]: " ) ;
     scanf( "%s", CustomerName ) ;
 
-    while ( strcmp( CustomerName , "QUIT" ) != 0 ) {
+    while ( strcmp( CustomerName, "QUIT" ) != 0 ) {
         i = 0;
-        printf( "Enter name, quantity, and price for item %d [END 0 0]: " , i + 1 ) ;
+        printf( "Enter name, quantity, and price for item %d [END 0 0]: ", i + 1 ) ;
         scanf( "%s %f %f", Name[i], &Quantity[i], &UnitPrice[i] ) ;
-        while ( strcmp( Name[i] , "END" ) != 0 ) {
+        while ( strcmp( Name[i], "END" ) != 0 ) {
             i++;
-            printf( "Enter name, quantity, and price for item %d [END 0 0]: " , i + 1 ) ;
+            printf( "Enter name, quantity, and price for item %d [END 0 0]: ", i + 1 ) ;
             scanf( "%s %f %f", Name[i], &Quantity[i], &UnitPrice[i] ) ;
         } //end while
         NumberOfItems = i ;
