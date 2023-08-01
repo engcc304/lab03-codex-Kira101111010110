@@ -38,5 +38,5 @@ int main(void) {
         printf( "Enter customer name [QUIT to stop]: " ) ;
         scanf( "%s", CustomerName ) ;
     } //end while
-    return 0 ;
+    return 0 ; 
 } //end function
