@@ -25,18 +25,18 @@ int main(void) {
         for ( i = 0 ; i < NumberOfItems ; i++ ) {
             TotalPrice[i] = Quantity[i] * UnitPrice[i] ;
             TotalAmount += TotalPrice[i] ;
-        }//end for
+        } //end for
 
         printf( "--------------------------------------------------------------\n" ) ;
         printf( "%-20s %11s %13s %17s\n", "Name", "Quantity", "Unit Price", "Total Price" ) ;
         printf( "--------------------------------------------------------------\n" ) ;
         for ( i = 0 ; i < NumberOfItems ; i++ ) {
             printf( "%-20s %11.2f %13.2f %17.2f\n", Name[i], Quantity[i], UnitPrice[i], TotalPrice[i] ) ;
-        }//end for
+        } //end for
         printf( "--------------------------------------------------------------\n" ) ;
         printf( "%52s %11.2f\n", "TOTAL AMOUNT : ", TotalAmount) ;
         printf( "Enter customer name [QUIT to stop]: " ) ;
         scanf( "%s", CustomerName ) ;
-    }//end while
+    } //end while
     return 0 ;
-}//end function
+} //end function
